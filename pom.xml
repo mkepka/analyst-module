@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cz.zcu.kgm.</groupId>
+  <artifactId>analyst-module</artifactId>
+  
+  <packaging>war</packaging>
+  <version>0.1</version>
+  <name>Analyst Module Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+      <properties>
+        <jersey2.version>2.25</jersey2.version>
+    </properties>
+    
+  <dependencies>
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.5</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.2.1.jre7</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-server</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-jetty-servlet</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-jaxb</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <!--
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-moxy</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    -->
+    <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-jsp -->
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-jsp</artifactId>
+      <version>9.2.24.v20180105</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.8.4</version>
+    </dependency>
+  
+  <!-- https://github.com/opendatalab-de/geojson-jackson-->
+    <dependency>
+      <groupId>de.grundid.opendatalab</groupId>
+      <artifactId>geojson-jackson</artifactId>
+      <version>1.8</version>
+    </dependency>
+
+   <!-- The Java API for KML -->
+  <dependency>
+    <groupId>de.micromata.jak</groupId>
+    <artifactId>JavaAPIforKml</artifactId>
+    <version>2.2.1</version>
+  </dependency>
+  
+  <!-- https://commons.apache.org/proper/commons-csv/ -->
+  <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-csv</artifactId>
+    <version>1.5</version>
+  </dependency>
+
+  </dependencies>
+  
+  <build>
+    <finalName>analyst-module</finalName>
+    <sourceDirectory>./src/main/java</sourceDirectory>
+    <testSourceDirectory>./src/test/java</testSourceDirectory>
+    
+    <resources>
+      <resource>
+        <directory>./src/main/resources</directory>
+      </resource>
+    </resources>
+    
+    <pluginManagement>
+      <plugins>
+
+        <plugin>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>9.3.23-SNAPSHOT</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.7.0</version>
+          <configuration>
+            <source>1.7</source>  <!-- The -source argument for the Java compiler. -->
+            <target>1.7</target>  <!-- The -target argument for the Java compiler. -->
+            <debug>true</debug>   <!-- Whether to include debugging information.   -->
+            <encoding>UTF-8</encoding> <!-- The -encoding argument for the Java compiler. -->
+          </configuration>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+    
+  </build>
+
+</project>

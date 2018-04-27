@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35px" height="35px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 35 35"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#1F1A17;stroke-width:2.06695}
+    .fil0 {fill:none}
+    .fil1 {fill:#1F1A17;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Vrstva_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="1.07048" y="0.99667" width="32.8188" height="32.9215"/>
+  <polygon class="fil1" points="12.1412,21.447 9.73945,17.5856 9.73945,21.447 8.21321,21.447 8.21321,13.4633 9.73945,13.4633 9.73945,17.0978 12.1288,13.4633 13.9428,13.4633 11.2301,17.2685 14.0825,21.447 "/>
+  <polygon id="1" class="fil1" points="19.581,21.447 19.4351,16.9328 19.3809,15.1313 18.9952,16.3533 18.1089,19.0701 17.1685,19.0701 16.3677,16.3533 16.0321,15.1313 15.9903,16.8952 15.8551,21.447 14.579,21.447 14.9688,13.4633 16.6683,13.4633 17.3706,15.7299 17.7067,17.006 18.0424,15.8026 18.7803,13.4633 20.5107,13.4633 20.9072,21.447 "/>
+  <polygon id="12" class="fil1" points="22.3854,21.447 22.3854,13.4633 23.9137,13.4633 23.9137,20.1585 27.2853,20.1585 27.2853,21.447 "/>
+ </g>
+</svg>

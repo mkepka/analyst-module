@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+#map { 
+    height: 100%;
+    width: 100%;
+}
+
+#map_area {
+    /* height: 800px; */
+    /* width: 1200px; */
+}
+
+.pop_info{
+    border: 1px solid;
+    width: 100%;
+    /*overflow-x:  scroll;*/
+}
+.info_key{
+    border-right: 1px solid;
+}
